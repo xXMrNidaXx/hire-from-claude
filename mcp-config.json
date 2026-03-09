@@ -1,0 +1,63 @@
+{
+  "name": "revolutionai",
+  "description": "Hire devs, designers & marketers from inside Claude or Cursor",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "hire_developer",
+      "description": "Post a developer task to RevolutionAI and get matched with talent instantly",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "task": { "type": "string", "description": "What you need built" },
+          "budget": { "type": "string", "description": "Budget in USD (e.g. '$2K')" },
+          "timeline": { "type": "string", "description": "How fast you need it (e.g. '5 days')" },
+          "skills": { "type": "array", "items": { "type": "string" }, "description": "Required skills" }
+        },
+        "required": ["task"]
+      }
+    },
+    {
+      "name": "hire_designer",
+      "description": "Find a designer for your SaaS — landing pages, UI/UX, branding",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "task": { "type": "string" },
+          "style": { "type": "string", "description": "Design style preference (e.g. 'minimal SaaS', 'bold/colorful')" },
+          "budget": { "type": "string" },
+          "timeline": { "type": "string" }
+        },
+        "required": ["task"]
+      }
+    },
+    {
+      "name": "hire_marketer",
+      "description": "Connect with marketers who specialize in SaaS growth and paid acquisition",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "task": { "type": "string" },
+          "channels": { "type": "array", "items": { "type": "string" }, "description": "Marketing channels (e.g. ['paid ads', 'SEO', 'content'])" },
+          "budget": { "type": "string" }
+        },
+        "required": ["task"]
+      }
+    },
+    {
+      "name": "search_talent",
+      "description": "Search RevolutionAI talent by skill, rate, or availability",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "max_rate": { "type": "number", "description": "Max hourly rate in USD" },
+          "available_now": { "type": "boolean" }
+        },
+        "required": ["query"]
+      }
+    }
+  ],
+  "homepage": "https://www.revolutionai.io",
+  "repository": "https://github.com/xXMrNidaXx/hire-from-claude"
+}
