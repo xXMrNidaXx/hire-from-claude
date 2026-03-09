@@ -1,0 +1,27 @@
+{
+  "name": "hire-from-claude",
+  "version": "1.0.0",
+  "description": "Hire devs, designers & marketers from inside Claude or Cursor — MCP-native freelance marketplace by RevolutionAI",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "claude",
+    "cursor",
+    "anthropic",
+    "freelance",
+    "marketplace",
+    "hire",
+    "model-context-protocol"
+  ],
+  "homepage": "https://www.revolutionai.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xXMrNidaXx/hire-from-claude"
+  },
+  "license": "MIT",
+  "author": "RevolutionAI <hello@revolutionai.io>",
+  "main": "index.js",
+  "bin": {
+    "hire-from-claude": "index.js"
+  }
+}
